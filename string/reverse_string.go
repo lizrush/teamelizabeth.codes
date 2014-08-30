@@ -1,4 +1,4 @@
-package string
+package reverse_string
 
 func Reverse(s string) string {
 	b := []byte(s)

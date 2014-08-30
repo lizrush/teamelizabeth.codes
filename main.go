@@ -2,6 +2,7 @@ package main
 
 import "github.com/go-martini/martini"
 import "github.com/martini-contrib/render"
+import "teamelizabeth.codes/string"
 
 func main() {
   m := martini.Classic()
@@ -15,9 +16,13 @@ func main() {
     return "THIS SITE IS FOR ELIZABETH EYES ONLY!"
   })
 
-   m.Get("/hello", func(r render.Render) {
+  m.Get("/hello", func(r render.Render) {
     r.HTML(200, "hello", "elizabeth")
   })
+
+  m.Get("/olleh", func(r render.Render) {
+    r.HTML(200, "hello", reverse_string.Reverse("elizabeth"))
+    })
 
   m.Run()
 }
