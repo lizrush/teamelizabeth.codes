@@ -1,4 +1,4 @@
-package main // name of the follow package below
+package main // package delcaration
 
 import "github.com/go-martini/martini" // framework
 import "github.com/martini-contrib/render" // rendering package to make things like erbs
