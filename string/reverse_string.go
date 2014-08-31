@@ -3,7 +3,7 @@ package reverse_string // name of package to be called, ie "reverse_string.Rever
 func Reverse(s string) string { // name of funtion, type of parameter passed in which
                                 // will be referenced in the function as 's',
                                 // return type then opening brace
-	b := []byte(s) // the bytes of the string- will break on some unicode chars
+	b := []rune(s) // the bytes of the string- will break on some unicode chars
                   // the := is shorthand for assigning a variable without an explicit type
                   // 'age := 26' is the same as 'var age int = 26'
 	for i := 0; i < len(b)/2; i++ { // for loop, starts with the variable initialization,
