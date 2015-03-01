@@ -15,8 +15,15 @@ All comments are written as we try to figure it out; they are written with a spe
 TODOs:
 ---------------------------------
 
-Resume page
-Blog
-Landing page
- - hero section with image
- - h1 in
+* Resume page
+* Blog
+* Landing page
+ - hero section with image from photo shoot
+ - h1 in fire font
+ - nav bar on top
+ - team motto
+ - about paragraph under team motto
+ - twitter links
+* fan letters
+* Letters to our TV producer
+
