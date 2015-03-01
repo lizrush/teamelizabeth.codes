@@ -12,8 +12,8 @@ func main() { // when we run "go run main.go" it will call this method
     Extensions: []string{".tmpl", ".html"}, // Specify extensions to load for templates.
   }))
 
-  m.Get("/", func() string {
-    return "THIS SITE IS FOR ELIZABETH EYES ONLY!"
+  m.Get("/", func(r render.Render) {
+    r.HTML(200, "home", "hello")
   })
 
   m.Get("/hello", func(r render.Render) { //uses the render package
